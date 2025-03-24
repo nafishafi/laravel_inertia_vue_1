@@ -4,11 +4,11 @@
     defineProps({
         user: Object
     })
+
+    defineOptions({ layout: PublicLayout})
 </script>
 
 <template>
-    <PublicLayout>
         <h1>Ini adalah halaman user</h1>
         <h2>Anda adalah {{ user.name }} ({{ user.age }})</h2>
-    </PublicLayout>
 </template>
