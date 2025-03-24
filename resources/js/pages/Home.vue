@@ -1,5 +1,9 @@
+<script setup>
+    import PublicLayout from '../Layouts/PublicLayout.vue';
+</script>
+
 <template>
-    <div>
-        <h1>Welocome</h1>
-    </div>
+    <PublicLayout>
+        <h1>Welcome Home</h1>
+    </PublicLayout>
 </template>
