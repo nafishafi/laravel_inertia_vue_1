@@ -7,8 +7,8 @@ import PublicLayout from './Layouts/PublicLayout.vue';
 createInertiaApp({
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
-    return pages[`./Pages/${name}.vue`]
-    pages.default.layout = name.startsWith('User/') ? AdminLayout : PublicLayout
+    let page = pages[`./Pages/${name}.vue`]
+    page.default.layout = name.startsWith('User/') ? AdminLayout : PublicLayout
     return page
   },
   setup({ el, App, props, plugin }) {
