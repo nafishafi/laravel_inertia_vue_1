@@ -9,7 +9,8 @@ import { Link } from '@inertiajs/vue3'
   <main>
     <header style="background-color: aquamarine; padding: 10px;">
       <Link style="margin-right: 10px;" href="/">Home</Link>
-      <Link href="/user">User</Link>
+      <Link style="margin-right: 10px;" href="/user">User</Link>
+      <Link style="margin-right: 10px;" href="/upload-file">Upload File</Link>
     </header>
     <article>
       <slot />

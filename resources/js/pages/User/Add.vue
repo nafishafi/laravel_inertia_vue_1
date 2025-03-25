@@ -35,7 +35,7 @@
                         <div class="text-danger" v-if="form.errors.email">{{ form.errors.email }}</div>
                     </div>
                     <div class="mg-3">
-                        <label for="password">Password::</label>
+                        <label for="password">Password:</label>
                         <input class="form-control" id="password" type="password" v-model="form.password" />
                         <div class="text-danger" v-if="form.errors.password">{{ form.errors.password }}</div>
                     </div>
